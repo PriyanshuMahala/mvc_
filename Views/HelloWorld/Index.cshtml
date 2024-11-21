@@ -1,8 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Movie list";
-
 }
 
 <h2>My Movie List</h2>
 
 <p>Hello from our View Template!</p>
+
+<form action="https://localhost:7029/HelloWorld/Welcome/" method="GET">
+    <div>
+        <label for="numtimes">How many times do you want to repeat?: </label>
+        <input type="number" required id="numtimes" name="numtimes">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="name">What is the message?: </label>
+        <input type="text" required, id="name" name="name">
+    </div>
+
+    <br/>
+
+    <button type="submit">Submit</button>
+
+</form>     
